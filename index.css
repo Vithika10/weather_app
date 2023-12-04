@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('images/bg_img.jpg');
+  }
+  /* home page starts here */
+.home_page {
+    
+    color: white; 
+    text-align: left; 
+}
+.bi.bi-cloud-sun-fill {
+    font-size: 160px; 
+    padding-left: 5rem;
+}
+.home_page h1 {
+    font-size: 75px; 
+    margin-top: 5px; 
+    padding-left: 5rem;
+}
+/* home page ends here */
+
+/* weather search starts here */
+  .search{
+    width: 750px;
+    height: 365px;
+    margin: 70px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+    padding-top: .5rem;
+  }
+  .search header{
+    display: flex;
+    font-size: 21px;
+    font-weight: 500;
+    color: #43AFFC;
+    padding: 16px 15px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .search.active header {
+    margin-left: 5px;
+    font-size: 30px;
+  }
+  .search .input_part{
+    margin: 20px 25px 30px;
+  }
+  .search .active .input_part{
+    display: none;
+  }
+  .input_part :where(input, button){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+  }
+  .input_part input{
+    text-align: center;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+  }
+  .input_part input:is(:focus, :valid){
+    border: 2px solid #43AFFC;
+  }
+  .input_part input::placeholder{
+    color: #bfbfbf;
+  }
+  .input_part .separator{
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .separator::before{
+    content: "or";
+    color: #b3b3b3;
+    font-size: 19px;
+    padding: 0 15px;
+    background: #fff;
+  }
+  .input_part button{
+    color: #fff;
+    cursor: pointer;
+    background: #43AFFC;
+    transition: 0.3s ease;
+    padding-top: .5%;
+  }
+  .input_part button:hover{
+    background: #1d9ffc;
+  }
+  .input_part .search-btn{
+    color: #fff;
+    cursor: pointer;
+    background: #43AFFC;
+    transition: 0.3s ease;
+    padding-top: .5%;
+    width:50%;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+  .input_part .search-btn:hover {
+    background: #1d9ffc;
+  }
+/* weather search ends here */
+
+/* weather info starts here */
+.card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  width: 500px;
+  height:500px; 
+}
+.card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 500;
+  color: #43AFFC;
+  border-bottom: 1px solid #ccc;
+}
+.card.active header {
+  margin-left: 5px;
+  font-size: 30px;
+}
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5%;
+}
+.btn i {
+  margin-right: 5px;
+}
+img {
+  width: 85px;
+  height: 85px;
+  padding-bottom: .5rem;
+}
+.header .btn:hover{
+  background: #1d9ffc;
+}
+.weather_info_part img {
+  padding: 0.5rem;
+  max-width: 200px;
+}
+.temp {
+  font-size: 56px;
+  font-weight: 600;
+}
+.bottom-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.column {
+  display: flex;
+  align-items: center;
+}
+.bx-map, .bxs-droplet-half, .bxs-thermometer {
+  font-size: 54px;
+  margin-right: 8px;
+}
+.details {
+  text-align: left;
+}
+.details p {
+  margin: 0;
+  font-size: 24px;
+}
+.location i {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .card {
+      max-width: 100%;
+  }
+}
+/* weather info ends here */
+
+/* Footer start here*/
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1200px;
+    padding: 25px;
+    color: #f4f6fd;
+    font-size: 14px;
+}
+
+#footer .copyright {
+    font-size: 15px;
+    text-align: center;
+    margin: 0; 
+}
+
+#footer .copyright p {
+    margin: 0px;
+    margin-left: 250px; 
+    margin-right: 50px;
+}
+/* footer ends here */
+
+/* Add responsive styles for small screens */
+@media (max-width: 768px) {
+    /* Adjust the font size and padding for the home_page */
+    .home_page {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home_page h1 {
+        font-size: 24px;
+    }
+
+    /* Center the input elements in the search section */
+    .search .input_part .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Make the search input full-width */
+    .search .input_part .content input[type="text"] {
+        width: 100%;
+    }
+
+    /* Adjust the button styles */
+    .search .input_part .content button {
+        margin-top: 10px;
+    }
+
+    /* Add some spacing to the footer text */
+    #footer p {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/cloudy.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- home page starts here -->
+    <div class="home_page">
+        <i class="bi bi-cloud-sun-fill"></i>
+        <h1>DAILY WEATHER FORECASTE</h1>
+    </div>
+    <!-- home page ends here -->
+
+    <!-- weather search starts here -->
+    <div class="search">
+    <header>Weather Website</header>
+    <section class="input_part">
+        <div class="content">
+          <input type="text" spellcheck="false" placeholder="Enter city name" required>
+          <button onClick="myFunction()" class="search-btn"><a href=".card"></a>Search</button>
+          <div class="separator"></div>
+          <button >Get Device Location</button>
+        </div>
+      </section>
+    </div>
+    <!-- weather search ends here -->
+
+    <!-- footer section start here -->
+    <footer id="footer">
+          <div class="copyright">
+            <p>&copy; 2023 Weather website. All rights reserved.</p>
+          </div>
+      </footer>
+    <!-- footer section ends here -->
+
+    <script src="weather.js"></script>
+</body>
+</html>
